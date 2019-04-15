@@ -1,0 +1,20 @@
+[package]
+name = "rocket-rest-example"
+version = "0.1.0"
+authors = ["Alif Faishol <alifaishol@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rocket = "0.4.0"
+diesel = { version = "1.4.1", features = ["mysql"] }
+dotenv = "0.13.0"
+serde = "*"
+serde_derive = "*"
+bcrypt = "0.4.0"
+chrono = "0.4"
+jsonwebtoken = "5.0.1"
+
+[dependencies.rocket_contrib]
+version = "0.4.0"
+default-features = false
+features = ["json", "diesel_mysql_pool"]
