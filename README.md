@@ -30,3 +30,10 @@ I'm just started using rust, any feedback to improve the code would be apreciate
       ```
       cargo run
       ```
+
+## Example resources
+Postman collection: [Here](https://www.getpostman.com/collections/753bba032e7cb704be69)
+POST `/user/login`: to login.
+POST `/user/sign_up`: to sign up.
+GET `/user/current_user`: to get user details, jwt required.
+GET `/user/logout`: jwt required, to add provided jwt to blacklist and clear expired jwts from blacklist. Blacklist stored in memory.
