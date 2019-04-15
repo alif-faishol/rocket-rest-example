@@ -16,16 +16,16 @@ I'm just started using rust, any feedback to improve the code would be apreciate
       ```
       cargo install diesel_cli
       ```
-  - Run migrations
-      ```
-      diesel migration run
-      ```
   - Create .env
       ```
       cp .env.example .env
       ```
   - Edit .env to use your MySQL database, or use provided
     dockerized MySQL server.
+  - Run migrations
+      ```
+      diesel migration run
+      ```
   - Run
       ```
       cargo run
